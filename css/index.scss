@@ -1,0 +1,166 @@
+/* bootstrap */
+@import "bootstrap-variables";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+/* fullpage.js */
+@import "../node_modules/fullpage.js/jquery.fullPage";
+
+html,
+body,
+.fullpage-wrapper,
+.section {
+    height: 100%;
+}
+
+html {
+    font-size: 100px;
+    body {
+        font-size: .16rem;
+        background: #ffffff;
+        font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+    }
+}
+
+.tooltip-inner {
+    max-width: none;
+    padding: .2rem;
+}
+
+/* 固定的头部尾部 */
+#header,
+#footer {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: #333;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+#header {
+    top: 0;
+    padding-top: .2rem;
+    background: rgba(192, 64, 0, 0);
+
+    .navbar-nav {
+        & > li {
+            & > a {
+                background-color: rgba(149, 149, 149, 1);
+                color: #fff;
+                margin-left: .1rem;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 18px;
+                transition: all ease .3s;
+                &:hover {
+                    background-color: rgba(0, 0, 0, .62);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+#fullpage {
+    & > .section {
+        text-align: center;
+        padding: 1rem 0 .3rem;
+        & > .fp-tableCell {
+            & > .container {
+                display: table;
+                & > .row {
+                    display: table-row;
+                    & > [class^=col-] {
+                        float: none;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    .section {
+        .intro {
+            .title {
+                margin: 0;
+                padding-top: .3rem;
+                font-size: .66rem;
+            }
+            .subtitle {
+                font-size: .4rem;
+            }
+            .download-area {
+                padding-top: .3rem;
+                .btn-download {
+                    display: inline-block;
+                    width: 2.3rem;
+                    height: .73rem;
+                    margin-bottom: .1rem;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: .05rem;
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+                .btn-download-ios {
+                    background-image: url("../images/btn-download-ios.png");
+                }
+                .btn-download-android {
+                    background-image: url("../images/btn-download-android.png");
+                }
+            }
+        }
+        .simulator {
+            img {
+                width: 3.2rem;
+            }
+        }
+    }
+    #section0 {
+        background: url(../images/fp-bg-1.jpg);
+    }
+
+    #section1 {
+        background: url(../images/fp-bg-2.jpg);
+    }
+
+    #section2 {
+        background: url(../images/fp-bg-3.jpg);
+    }
+
+}
+
+#footer {
+    bottom: 0;
+    color: #fff;
+    background: rgba(64, 128, 0, 0);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+/**
+ * 移动端样式调整
+ **/
+@media (max-width: 991px) {
+
+    #fullpage {
+        & > .section {
+            & > .fp-tableCell {
+                & > .container {
+                    display: block;
+                    & > .row {
+                        display: block;
+                        & > [class^=col-] {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keyword" content="INVITE">
+    <meta name="description" content="INVITE · 一起体验生活的精彩">
+    <meta name="author" content="kavalon">
+    <title>INVITE · 一起体验生活的精彩</title>
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+
+    <!-- custom -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <script>
+        /**
+         * [以iPhone6的设计稿为例js动态设置文档 rem 值]
+         * @param  {[type]} currClientWidth [当前客户端的宽度]
+         * @param  {[type]} fontValue [计算后的 fontvalue值]
+         * @return {[type]}     [description]
+         */
+        var currClientWidth, fontValue, originWidth;
+        //originWidth用来设置设计稿原型的屏幕宽度（这里是以 Iphone 6为原型的设计稿）
+        originWidth = 480;
+        __resize();
+
+        //注册 resize事件
+        window.addEventListener('resize', __resize, false);
+
+        function __resize() {
+            currClientWidth = document.documentElement.clientWidth;
+            //这里是设置屏幕的最大和最小值时候给一个默认值
+            if (currClientWidth > 768) currClientWidth = 768;
+            if (currClientWidth < 240) currClientWidth = 240;
+            //
+            fontValue = ((62.5 * currClientWidth) / originWidth).toFixed(2);
+            document.documentElement.style.fontSize = fontValue + 'px';
+        }
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<header id="header">
+
+    <nav id="navbar-global-header" class="navbar navbar-static">
+        <div class="container clearfix">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+                    <span class="sr-only">折叠/展开导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:">
+                    <img src="images/logo.png" alt="INVITE" width="260">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+                <ul class="nav navbar-nav nav-pills navbar-right">
+                    <li id="dropdown1" class="dropdown">
+                        <a href="javascript:">关于我们</a>
+                    </li>
+                    <li id="dropdown2" class="dropdown">
+                        <a href="javascript:">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-7">
+                    <div class="intro">
+                        <h1 class="title">在这里总能找到</h1>
+
+                        <h3 class="subtitle">让生活精彩的趣事</h3>
+
+                        <div class="row download-area">
+                            <div class="col-xs-5 col-xs-offset-1">
+                                <a href="javascript:" class="btn-download btn-download-ios" title='<img src="images/qrcode.png" width="200" height="200" alt="">' data-html="true" data-toggle="tooltip">
+                                    <span class="sr-only">Apple download</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="javascript:" class="btn-download btn-download-android" title='<img src="images/qrcode.png" width="200" height="200" alt="">' data-html="true" data-toggle="tooltip">
+                                    <span class="sr-only">Android download</span>
+                                </a>
+
+                                <div class="tooltip qrcode2 top" role="tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-inner">
+                                        <img src="images/logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+
+                    <div class="simulator">
+                        <img src="images/simulator1.png" alt="" width="320">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="section" id="section1">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-7">
+                    <div class="intro">
+                        <h1 class="title">总有共同感兴趣的人</h1>
+
+                        <h3 class="subtitle">与你一同参加</h3>
+
+                        <div class="row download-area">
+                            <div class="col-xs-5 col-xs-offset-1">
+                                <a href="javascript:" class="btn-download btn-download-ios" title='<img src="images/qrcode.png" width="200" height="200" alt="">' data-html="true" data-toggle="tooltip">
+                                    <span class="sr-only">Apple download</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="javascript:" class="btn-download btn-download-android" title='<img src="images/qrcode.png" width="200" height="200" alt="">' data-html="true" data-toggle="tooltip">
+                                    <span class="sr-only">Android download</span>
+                                </a>
+
+                                <div class="tooltip qrcode2 top" role="tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-inner">
+                                        <img src="images/logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+
+                    <div class="simulator">
+                        <img src="images/simulator2.png" alt="" width="320">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-7">
+                    <div class="intro">
+                        <h1 class="title">你的生活方式</h1>
+
+                        <h3 class="subtitle">就是你的圈子</h3>
+
+                        <div class="row download-area">
+                            <div class="col-xs-5 col-xs-offset-1">
+                                <a href="javascript:" class="btn-download btn-download-ios" title='<img src="images/qrcode.png" width="200" height="200" alt="">' data-html="true" data-toggle="tooltip">
+                                    <span class="sr-only">Apple download</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="javascript:" class="btn-download btn-download-android" title='<img src="images/qrcode.png" width="200" height="200" alt="">' data-html="true" data-toggle="tooltip">
+                                    <span class="sr-only">Android download</span>
+                                </a>
+
+                                <div class="tooltip qrcode2 top" role="tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-inner">
+                                        <img src="images/logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+
+                    <div class="simulator">
+                        <img src="images/simulator3.png" alt="" width="320">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<footer id="footer">Copyright © 2015 - 2016 INVITE. All Rights Reserved.</footer>
+
+<!-- jQuery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+<!-- fullPage.js -->
+<script src="node_modules/fullpage.js/jquery.fullPage.js"></script>
+<script>
+    $(document).ready(function () {
+
+        var SCROLLING_SPEED = 700;
+        $('#fullpage').fullpage({
+            //anchors      : ['page1', 'page2', 'page3'],
+            sectionsColor: ['#fff', '#fff', '#fff'],
+            css3         : true,
+            // Hide the slides container before the next slide loads
+            onSlideLeave : function (anchorLink, index, slideIndex, direction) {
+                $.fn.fullpage.setScrollingSpeed(0);
+                $('.section').find('.fp-slidesContainer').hide();
+            },
+
+            // Display the slides container by fading it in after the next slide has been loaded.
+            afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+                $('.fp-section').find('.fp-slidesContainer').fadeIn(700);
+                $.fn.fullpage.setScrollingSpeed(SCROLLING_SPEED);
+            }
+        });
+    });
+</script>
+
+<!-- artDialog -->
+<link rel="stylesheet" href="plugins/artDialog/css/ui-dialog.css">
+<script src="plugins/artDialog/dist/dialog-min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        /* 关于我们 */
+        $('#dropdown1').on('click', function (e) {
+            dialog({
+                content   : '<div style="width: 320px; line-height: 2;">INVITE 是一款以玩为主的 App. 可进行线上交流, 线下交友的移动应用. INVITE 提供丰富的线下生活方式场景, 便捷的邀约方法和即时通讯工具. 在这里用户可以找到有意思的人一起去做感兴趣的事儿.</div>',
+                align     : 'bottom',
+                quickClose: true
+            }).show(e.target);
+        });
+
+        /* 联系我们 */
+        $('#dropdown2').on('click', function (e) {
+            dialog({
+                content   : '<div style="width: 320px;"><dl>\n    <dt style="line-height: 2;">客户助理</dt>\n    <dd style="line-height: 2;">电话: 400-662-5135</dd>\n    <dd style="line-height: 2;">邮箱: jwang@x-one.cc</dd>\n</dl>\n<dl>\n    <dt style="line-height: 2;">商务合作</dt>\n    <dd style="line-height: 2;">电话: 010-8588-8980</dd>\n</dl>\n<dl>\n    <dt style="line-height: 2;">公司地址</dt>\n    <dd style="line-height: 2;">北京市朝阳区东三环北路 30 号紫荆豪庭 A 座 28F</dd>\n</dl></div>',
+                align     : 'bottom',
+                quickClose: true
+            }).show(e.target);
+        });
+
+        $('[data-toggle="tooltip"]').tooltip()
+
+    });
+</script>
+
+</body>
+</html>
