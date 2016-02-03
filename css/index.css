@@ -6068,7 +6068,7 @@ html {
 
 #fullpage > .section {
   text-align: center;
-  padding: 1rem 0 .3rem; }
+  /*padding: 1rem 0 .3rem;*/ }
   #fullpage > .section > .fp-tableCell > .container {
     display: table; }
     #fullpage > .section > .fp-tableCell > .container > .row {
@@ -6118,11 +6118,13 @@ html {
  * 移动端样式调整
  **/
 @media (max-width: 991px) {
-  #fullpage > .section > .fp-tableCell > .container {
-    display: block; }
-    #fullpage > .section > .fp-tableCell > .container > .row {
+  #fullpage > .section {
+    padding: 1rem 0 .3rem; }
+    #fullpage > .section > .fp-tableCell > .container {
       display: block; }
-      #fullpage > .section > .fp-tableCell > .container > .row > [class^=col-] {
-        display: block; } }
+      #fullpage > .section > .fp-tableCell > .container > .row {
+        display: block; }
+        #fullpage > .section > .fp-tableCell > .container > .row > [class^=col-] {
+          display: block; } }
 
 /*# sourceMappingURL=index.css.map */

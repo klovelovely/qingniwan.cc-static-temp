@@ -67,7 +67,7 @@ html {
 #fullpage {
     & > .section {
         text-align: center;
-        padding: 1rem 0 .3rem;
+        /*padding: 1rem 0 .3rem;*/
         & > .fp-tableCell {
             & > .container {
                 display: table;
@@ -148,6 +148,7 @@ html {
 
     #fullpage {
         & > .section {
+            padding:1rem 0 .3rem;
             & > .fp-tableCell {
                 & > .container {
                     display: block;
