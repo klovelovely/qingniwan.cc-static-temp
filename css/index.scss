@@ -17,9 +17,26 @@ html {
         font-size: .16rem;
         background: #ffffff;
         font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+        a {
+            &:hover,
+            &:active,
+            &:focus {
+                outline: 0 none;
+            }
+        }
     }
 }
 
+.disn {
+    display: none;
+}
+
+/* bootstrap logo */
+.navbar-brand {
+    display: inline-block;
+}
+
+/* bootstrap 提示框 */
 .tooltip-inner {
     max-width: none;
     padding: .2rem;
@@ -55,6 +72,7 @@ html {
                 border-radius: 18px;
                 transition: all ease .3s;
                 &:hover {
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, .4);
                     background-color: rgba(0, 0, 0, .62);
                     color: #fff;
                 }
@@ -148,7 +166,7 @@ html {
 
     #fullpage {
         & > .section {
-            padding:1rem 0 .3rem;
+            padding: 1rem 0 .3rem;
             & > .fp-tableCell {
                 & > .container {
                     display: block;

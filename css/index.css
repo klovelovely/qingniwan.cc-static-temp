@@ -6032,7 +6032,17 @@ html {
     font-size: .16rem;
     background: #ffffff;
     font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif; }
+    html body a:hover, html body a:active, html body a:focus {
+      outline: 0 none; }
 
+.disn {
+  display: none; }
+
+/* bootstrap logo */
+.navbar-brand {
+  display: inline-block; }
+
+/* bootstrap 提示框 */
 .tooltip-inner {
   max-width: none;
   padding: .2rem; }
@@ -6063,6 +6073,7 @@ html {
     border-radius: 18px;
     transition: all ease .3s; }
     #header .navbar-nav > li > a:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       background-color: rgba(0, 0, 0, 0.62);
       color: #fff; }
 
